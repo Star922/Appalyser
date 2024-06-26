@@ -1,0 +1,13 @@
+import streamlit as st
+from components import sign_in_page,sign_up_page
+import session_states
+
+if __name__=='__main__':
+    try:
+        session_states.main()
+        if st.session_state['current_page']!='Sign Up':
+            sign_in_page()
+        else:
+            sign_up_page()
+    except Exception as e:
+        st.error("Something went wrong, can you help me get back up?")
