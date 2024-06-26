@@ -47,7 +47,7 @@ pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 pytz==2024.1
 referencing==0.35.1
-requests==2.27.0
+requests
 rich==13.7.1
 rpds-py==0.18.1
 rsa==4.9
